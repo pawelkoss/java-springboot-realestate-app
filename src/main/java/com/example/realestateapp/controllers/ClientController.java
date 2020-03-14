@@ -1,6 +1,7 @@
 package com.example.realestateapp.controllers;
 
 import com.example.realestateapp.models.Client;
+import com.example.realestateapp.services.ClientService;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;

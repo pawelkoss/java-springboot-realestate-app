@@ -1,5 +1,6 @@
 package com.example.realestateapp;
 
+import com.example.realestateapp.utils.DataExample;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -8,15 +9,15 @@ import javax.annotation.PostConstruct;
 @SpringBootApplication
 public class RealEstateAppApplication {
 
-	private BootStrap bootstrap;
+	private DataExample dataExample;
 
-	public RealEstateAppApplication(BootStrap bootStrap){
-		this.bootstrap = bootStrap;
+	public RealEstateAppApplication(DataExample dataExample){
+		this.dataExample = dataExample;
 	}
 
 	@PostConstruct
 	public void init(){
-		bootstrap.initializeRepository();
+		dataExample.initializeRepository();
 	}
 
 	public static void main(String[] args) {
